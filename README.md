@@ -22,6 +22,7 @@ python app.py
 ```
 
 La API estará disponible en `http://localhost:5000` con los siguientes endpoints:
+(dentro de Docker la aplicación escucha en `0.0.0.0:5000`)
 
 - `GET /tasks` – lista todas las tareas.
 - `POST /tasks` – crea una nueva tarea (JSON: `{ "title": "Nombre" }`).

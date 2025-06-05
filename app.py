@@ -51,4 +51,5 @@ def delete_task(task_id):
     abort(404, 'Task not found')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Bind to 0.0.0.0 so the app is reachable from outside the container
+    app.run(host='0.0.0.0', port=5000, debug=True)
