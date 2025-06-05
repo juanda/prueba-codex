@@ -29,3 +29,17 @@ La API estará disponible en `http://localhost:5000` con los siguientes endpoint
 - `DELETE /tasks/<id>` – elimina una tarea.
 
 
+## Docker
+
+Puedes construir y ejecutar la aplicación dentro de un contenedor con Docker:
+
+```bash
+docker build -t prueba-codex .
+docker run -p 5000:5000 prueba-codex
+```
+
+O bien, utilizando `docker-compose`:
+
+```bash
+docker compose up --build
+```
