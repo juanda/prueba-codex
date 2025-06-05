@@ -43,5 +43,3 @@ O bien, utilizando `docker-compose`:
 ```bash
 docker compose up --build
 ```
-
-
